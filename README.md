@@ -7,3 +7,30 @@ I use NVIM with NvChad, TreeSitter and Mason. The configuration is in `.config/n
 
 ## Zsh
 I use Zsh with OhMyZsh. The configuration is in `.zshrc` file.
+
+## Installation
+
+### Requirements
+```bash
+    # Ubuntu
+    sudo apt install stow git
+    # Arch
+    sudo pacman -S stow git
+
+    git clone https://github.com/NvChad/starter
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Repository
+```bash
+    git clone git@github.com:LucasVChaves/dot.git
+    cd dot
+    stow --adopt .
+```
+
+### NeoVim
+```bash
+    vim
+    :MasonInstallAll
+    rm -r ~/.config/nvim/.git
+```
