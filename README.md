@@ -2,6 +2,13 @@
 
 For the dotfiles management I use [GNU Stow](https://www.gnu.org/software/stow/).
 
+## Using stow
+Setup your dotfiles inside the stow repo in the same structure they have in your home dir. 
+Then run 
+```bash
+    stow .
+```
+
 ## Neovim
 I use NVIM with NvChad, TreeSitter and Mason. The configuration is in `.config/nvim` folder.
 

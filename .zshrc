@@ -118,7 +118,7 @@ alias cd3="cd ../../.."
 alias cd4="cd ../../../.."
 alias bye="shutdown now"
 alias gaa="git add --all"
-alias zshc="sudo vim ~/.zshrc"
+alias zshc="sudo nvim ~/.zshrc"
 alias vim="nvim"
 alias p3="python3"
 alias upd="sudo pacman -Syu"
@@ -128,3 +128,4 @@ eval $(thefuck --alias)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH=$HOME/.local/bin:$PATH
