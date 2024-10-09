@@ -122,7 +122,7 @@ alias zshc="sudo nvim ~/.zshrc"
 alias vim="nvim"
 alias p3="python3"
 alias python="python3"
-alias upd="sudo pacman -Syu"
+alias upd="sudo apt update -y & sudo apt upgrade -y"
 alias idea="/home/lucas/Tools/ideaIU-2024.2.1/idea-IU-242.21829.142/bin/idea"
 alias fasm="/home/lucas/Tools/fasm/fasm"
 
