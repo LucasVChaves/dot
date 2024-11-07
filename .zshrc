@@ -125,6 +125,7 @@ alias python="python3"
 alias upd="sudo apt update -y & sudo apt upgrade -y"
 alias idea="/home/lucas/Tools/ideaIU-2024.2.1/idea-IU-242.21829.142/bin/idea"
 alias fasm="/home/lucas/Tools/fasm/fasm"
+alias gfd="/home/lucas/Tools/gf/gf2"
 
 #eval $(thefuck --alias)
 
