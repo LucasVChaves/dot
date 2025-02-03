@@ -2,8 +2,8 @@
 local M = {}
 
 M.ui = {
-    theme = 'catppuccin',
-    transparency = true;
+    theme = 'rxyhn',
+    transparency = false;
 }
 
 M.plugins = 'custom.plugins'

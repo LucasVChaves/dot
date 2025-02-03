@@ -1,40 +1,5 @@
 ---@type Base46Table
 local M = {}
-
-M.base_30 = {
-   white = "#2c2c2c",   -- Texto principal
-   darker_black = "#e8e8e8", -- Fundo mais escuro
-   black = "#f0f0f0",   -- Fundo principal
-   black2 = "#e4e4e4",  -- Variantes do fundo
-   one_bg = "#dcdcdc",  -- Fundo claro
-   one_bg2 = "#d4d4d4",
-   one_bg3 = "#cccccc",
-   grey = "#c4c4c4",    -- Cinza para separadores e bordas
-   grey_fg = "#bcbcbc",
-   grey_fg2 = "#b4b4b4",
-   light_grey = "#acacac",
-   red = "#e06c75",     -- Destaques em vermelho (ex.: erros)
-   baby_pink = "#ff6c75",
-   pink = "#ff75a0",
-   line = "#d0d0d0",    -- Cor de linhas (como vertsplit)
-   green = "#98c379",   -- Destaques em verde (ex.: strings)
-   vibrant_green = "#88b454",
-   nord_blue = "#7a8c99",
-   blue = "#61afef",    -- Azul para links e funções
-   yellow = "#e5c07b",  -- Amarelo para alertas
-   sun = "#f0d676",
-   purple = "#c678dd",  -- Para palavras-chave (ex.: if, else)
-   dark_purple = "#b38bd7",
-   teal = "#56b6c2",    -- Azul-esverdeado para suporte
-   orange = "#d19a66",  -- Para variáveis constantes e booleans
-   cyan = "#56b6c2",    -- Paradd expressões regulares, citações
-   statusline_bg = "#eaeaea",  -- Fundo da linha de status
-   lightbg = "#e0e0e0", -- Fundos adicionais
-   lightbg2 = "#d8d8d8",
-   pmenu_bg = "#b4b4b4", -- Fundo do menu suspenso
-   folder_bg = "#111111", -- Cor de pastas
-}
-
 M.base_16 = {
    base00 = "#f0f0f0", -- Background
    base01 = "#fffffa", -- Lighter Background (status bar)
@@ -52,6 +17,40 @@ M.base_16 = {
    base0D = "#222222", -- Functions, Methods, Attribute IDs, Headings
    base0E = "#111111", -- Keywords, Storage, Selector, Markup Italic, Diff Changed
    base0F = "#111111", -- Deprecated, Opening/Closing Embedded Language Tags, e.g. `<?php ?>`
+}
+
+
+M.base_30 = {
+  white = "#ffffff",       -- Text (branco puro)
+  black = "#f0f0f0",       -- Fundo principal
+  darker_black = "#e8e8e8", -- Fundo mais escuro
+  black2 = "#f8f8f8",      -- Fundo secundário
+  one_bg = "#e0e0e0",      -- Fundo de borda clara
+  one_bg2 = "#d7d7d7",     -- Fundo hover ativo
+  one_bg3 = "#cfcfcf",     -- Fundo levemente destacado
+  grey = "#b0b0b0",        -- Cinza para elementos inativos
+  grey_fg = "#a0a0a0",     -- Cinza de destaque
+  grey_fg2 = "#909090",    -- Cinza mais escuro para texto menos importante
+  light_grey = "#808080",  -- Cinza claro
+  red = "#606060",         -- Comentários
+  baby_pink = "#505050",   -- Cores suaves (não usadas aqui)
+  pink = "#505050",        -- Cor semelhante a comentários
+  line = "#e0e0e0",        -- Linhas de separação
+  green = "#222222",       -- Strings, elementos inseridos
+  vibrant_green = "#222222",-- Destaques de inserção
+  nord_blue = "#d7d7d7",   -- Azul nórdico (ajustado para seleção BG)
+  blue = "#111111",        -- Azul padrão (usado em classes/keywords)
+  yellow = "#505050",      -- Constantes (suave)
+  sun = "#606060",         -- Elementos XML
+  purple = "#111111",      -- Keywords, seletores
+  dark_purple = "#505050", -- Marcadores fortes
+  teal = "#222222",        -- Diferenciações sutis
+  orange = "#606060",      -- Constantes e links
+  cyan = "#222222",        -- Escape chars
+  statusline_bg = "#f8f8f8", -- Fundo da linha de status
+  lightbg = "#e8e8e8",     -- Fundo leve (janela ativa)
+  pmenu_bg = "#111111",    -- Fundo do menu pop-up
+  folder_bg = "#111111",   -- Ícones de pastas
 }
 
 M.type = "light"
