@@ -4,6 +4,14 @@ local capabilities = base.capabilities
 
 local lspconfig = require("lspconfig")
 
+lspconfig.texlab.setup({
+    on_attach = function (client, bufnr)
+        local opts = {buffer = bufnr, silent = true}
+        vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+        vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+    end
+})
+
 lspconfig.rust_analyzer.setup({
     on_attach = on_attach,
     capabilities = capabilities,

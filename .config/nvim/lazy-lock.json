@@ -25,5 +25,6 @@
   "rust.vim": { "branch": "master", "commit": "889b9a7515db477f4cb6808bef1769e53493c578" },
   "telescope.nvim": { "branch": "master", "commit": "dc6fc321a5ba076697cca89c9d7ea43153276d81" },
   "ui": { "branch": "v2.0", "commit": "7b3225264af17a9e0aff0b4fd2a0fac90b73db53" },
+  "vimtex": { "branch": "master", "commit": "dfaf26c2cafddf61963ebeff28437352002691ac" },
   "which-key.nvim": { "branch": "main", "commit": "8badb359f7ab8711e2575ef75dfe6fbbd87e4821" }
 }
