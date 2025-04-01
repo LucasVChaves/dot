@@ -15,21 +15,15 @@ local config = wezterm.config_builder()
 config.window_decorations = "RESIZE"
 
 -- Background Image
-config.background = {
-    {
-        source = {
-            File = wezterm.config_dir .. "/wallpaper.png"
-        }
-    },
-}
-config.window_background_opacity = 0.9
+config.window_background_image = wezterm.config_dir .. "/wallpaper.png"
+config.window_background_image_hsb = {brightness = 0.35}
 
 -- Font
 config.font = wezterm.font("JetBrainsMono NFM")
 config.font_size = 20
 
 -- ColorScheme
-config.color_scheme = 'Gruvbox Dark (Gogh)'
+config.color_scheme = 'Tokyo Night (Gogh)'
 
 -- Cursor
 config.default_cursor_style = "BlinkingBlock"

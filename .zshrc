@@ -82,7 +82,7 @@ precmd() {vcs_info}
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git battery colorize colored-man-pages nmap vscode)
+plugins=(git battery colorize colored-man-pages nmap vscode zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -146,3 +146,15 @@ export NVM_DIR="$HOME/.nvm"
 # This section can be safely removed at any time if needed.
 [[ ! -r '/home/lucas/.opam/opam-init/init.zsh' ]] || source '/home/lucas/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+#rinosay "morte a burguesia" | /home/lucas/Downloads/lolcatc/lolcatc
+
+# pnpm
+export PNPM_HOME="/home/lucas/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+#
+# esp-idf
+source ~/Tools/esp/esp-idf/export.sh > /dev/null 2>&1

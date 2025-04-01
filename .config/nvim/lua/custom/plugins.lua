@@ -49,5 +49,28 @@ local plugins = {
             vim.g.vimtex_compiler_method = "latexmk"
         end,
     },
+    {
+        "mistweaverco/retro-theme.nvim",
+        opts = {
+            italic_comments = true,
+        }
+    },
+    {
+        "brianaung/compl.nvim",
+        opts = {
+            completion = {
+                fuzzy = false,
+                timeout = 100,
+            },
+            info = {
+                enable = true,
+                timeout = 100,
+            },
+            snippet = {
+                enable = false,
+                paths = {}
+            }
+        },
+    },
 }
 return plugins
