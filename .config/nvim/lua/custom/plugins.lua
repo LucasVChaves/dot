@@ -50,12 +50,6 @@ local plugins = {
         end,
     },
     {
-        "mistweaverco/retro-theme.nvim",
-        opts = {
-            italic_comments = true,
-        }
-    },
-    {
         "brianaung/compl.nvim",
         opts = {
             completion = {
@@ -70,6 +64,27 @@ local plugins = {
                 enable = false,
                 paths = {}
             }
+        },
+    },
+    {
+        'MeanderingProgrammer/render-markdown.nvim',
+        dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
+        -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+        -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+        ---@module 'render-markdown'
+        ---@type render.md.UserConfig
+        opts = {},
+    },
+    ["ui"] = {
+        {
+            "savq/melange-nvim",
+            lazy = false,
+            priority = 1000,
+        },
+        {
+            "bettervim/yugen.nvim",
+            lazy = false,
+            priority = 1000,
         },
     },
 }

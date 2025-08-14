@@ -126,6 +126,7 @@ alias upd="sudo apt update -y & sudo apt upgrade -y"
 alias idea="/home/lucas/Tools/ideaIU-2024.2.1/idea-IU-242.21829.142/bin/idea"
 alias fasm="/home/lucas/Tools/fasm/fasm"
 alias gfd="/home/lucas/Tools/gf/gf2"
+alias reload="source ~/.zshrc"
 
 #eval $(thefuck --alias)
 
@@ -158,3 +159,13 @@ esac
 #
 # esp-idf
 source ~/Tools/esp/esp-idf/export.sh > /dev/null 2>&1
+
+# platformio
+export PATH=$PATH:$HOME/.local/bin
+
+# Android SDK
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
